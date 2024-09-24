@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h2>Contact Details</h2>
+    </div>
+    <div class="container">
+        <form action="" method="post" id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Full Name">
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Address">
+
+            <label for="date">Date of Birth</label>
+            <input type="date" id="date" name="date" placeholder="DD-MM-YYY">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="someone@mail.com">
+
+            <input id="submit" type="submit" value="Submit">
+        </form>
+
+    </div>
+    <div id="errorMessage" style="color:red;"></div>
+    <div id="successMessage" style="color: green;"></div>
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
